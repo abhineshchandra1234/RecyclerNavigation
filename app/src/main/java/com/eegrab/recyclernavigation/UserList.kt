@@ -52,7 +52,7 @@ class UserList : Fragment(R.layout.fragment_user_list) {
             if (response.isSuccessful) {
                 val jsonString = Gson().toJson(response.body())
                 val obj = JSONObject(jsonString)
-                
+
                 Log.d(TAG, response.body().toString())
             }
         })
